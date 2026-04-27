@@ -5,12 +5,13 @@ import lombok.Getter;
 @Getter
 public enum StatusBicicletaEnum {
 	
-	DISPONIVEL("Disponível"),
-	EM_USO("Em uso"),
-	MANUTENCAO("Manutenção");
+	DISPONIVEL("DISPONIVEL"),
+	EM_USO("EM USO"),
+	MANUTENCAO("MANUTENCAO");
 	
 	private String status_bicicleta;
 	
-	private StatusBicicletaEnum(String string) {
+	private StatusBicicletaEnum(String status) {
+		this.status_bicicleta = status;
 	}
 }

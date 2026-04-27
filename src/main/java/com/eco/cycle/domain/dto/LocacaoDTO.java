@@ -9,11 +9,12 @@ import lombok.Setter;
 @Setter
 public class LocacaoDTO {
 
-	private Integer id;
-	private Integer usuario_id;
-	private Integer bicicleta_id;
+	private Long id;
+	private Boolean ativo;
+	private Long usuario_id;
+	private Long bicicleta_id;
 	private LocalDateTime data_inicio;
 	private LocalDateTime data_fim;
-	private Double valor_total;
-	
+	private Double saldo;
+	private Long estacao_id;
 }

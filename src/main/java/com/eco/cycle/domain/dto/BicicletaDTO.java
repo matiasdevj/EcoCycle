@@ -10,9 +10,11 @@ import lombok.Setter;
 @Setter
 public class BicicletaDTO {
 
-	private Integer id;
+	private Long id;
+	private Boolean ativo;
+	private Long usuario_id;
 	private String modelo;
 	private NivelBateriaEnum nivel_bateria;
 	private StatusBicicletaEnum status_bicicleta;
-	
+	private Long estacao_id;
 }
